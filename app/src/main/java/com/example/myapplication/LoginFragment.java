@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -71,6 +72,8 @@ public class LoginFragment extends Fragment {
                 Log.d("2nd", "onClick: 2nd");
                swapFragment();
                 Log.d("2nd", "onClick: 2nd");
+                Intent intent=new Intent(requireActivity(), Admin_Dashboard.class);
+                startActivity(intent);
                 Toast.makeText(requireContext(), "Button clicked 1!", Toast.LENGTH_SHORT).show();
             }
         });
